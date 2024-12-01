@@ -9,10 +9,10 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
-  await init.initMapkit(apiKey: 'c0fbd72a-7821-468f-8476-90836fa8ff6'); 
+  await init.initMapkit(apiKey: "c0fbd72a-7821-468f-8476-90836fa8ff61"); 
   //await init.initMapkit(apiKey: "c0fbd72a-7821-468f-8476-90836fa8ff61");
 
-  
+  mapkit.onStart();
 
   runApp(const MyApp());
 }

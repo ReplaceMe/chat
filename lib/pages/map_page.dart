@@ -54,7 +54,7 @@ class _MyMapPageState extends State<MyMapPage> {
   @override
   Widget build(BuildContext context) {
     
-    mapkit.onStart();
+    
     
     return (
       Scaffold(
