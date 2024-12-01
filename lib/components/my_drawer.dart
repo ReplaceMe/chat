@@ -31,7 +31,7 @@ class MyDrawer extends StatelessWidget{
             DrawerHeader(
           child:  Center(
             child: Image.asset(
-              "assets/ball.png",
+              "assets/play_store_512.png",
             //   Icons.message, color: Colors.grey.shade500,
             //   size:  40,
             //   ),

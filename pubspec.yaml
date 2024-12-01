@@ -78,6 +78,7 @@ flutter:
     - assets/bigMark.png
     - assets/ball_place_mark.png
     - assets/ball.png
+    - assets/play_store_512.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
 
