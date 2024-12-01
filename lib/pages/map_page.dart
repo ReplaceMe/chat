@@ -1,3 +1,4 @@
+import 'package:chat/components/my_drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:yandex_maps_mapkit/image.dart' as imgY;
 
@@ -58,12 +59,18 @@ class _MyMapPageState extends State<MyMapPage> {
     
     return (
       Scaffold(
+         appBar: AppBar(
+        title: const Text("К А Р Т А"),
+        backgroundColor: Colors.transparent,
+        foregroundColor: Colors.grey,
+        elevation: 0,
+      ),
         body: YandexMap(
           onMapCreated: _maps,
           
 
-          )
-          
+          ),
+          drawer: const MyDrawer(),
       )
     );
   }
