@@ -2,14 +2,14 @@ import 'package:chat/services/auth/auth_gate.dart';
 import 'package:chat/firebase_options.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:yandex_maps_mapkit/init.dart' as init;
+//import 'package:yandex_maps_mapkit/init.dart' as init;
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   //await init.initMapkit(apiKey: 'c0fbd72a-7821-468f-8476-90836fa8ff6'); 
-  await init.initMapkit(apiKey: "c0fbd72a-7821-468f-8476-90836fa8ff61");
+  //await init.initMapkit(apiKey: "c0fbd72a-7821-468f-8476-90836fa8ff61");
 
   //mapkit.onStart();
 

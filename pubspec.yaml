@@ -38,7 +38,7 @@ dependencies:
   firebase_core: ^3.8.0
   firebase_auth: ^5.3.3
   cloud_firestore: ^5.5.0
-  yandex_maps_mapkit: ^4.9.0-beta
+  #yandex_maps_mapkit: ^4.9.0-beta
 
 
 

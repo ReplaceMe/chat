@@ -1,5 +1,6 @@
 //import 'package:chat/pages/map_page.dart';
 import 'package:chat/pages/map_page.dart';
+import 'package:chat/pages/settings_page.dart';
 import 'package:chat/services/auth/auth_service.dart';
 //import 'package:chat/pages/settings_page.dart';
 import 'package:flutter/material.dart';
@@ -53,7 +54,7 @@ class MyDrawer extends StatelessWidget{
               onTap: (){
                 Navigator.pop(context);
 
-                Navigator.push(context, MaterialPageRoute(builder: (context) => const MyMap(),));
+                Navigator.push(context, MaterialPageRoute(builder: (context) => const SettingsPage(),));
               },
             ),
           ),
