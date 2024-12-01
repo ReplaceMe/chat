@@ -50,11 +50,11 @@ class MyDrawer extends StatelessWidget{
             padding: const EdgeInsets.only(left: 25.0),
             child: ListTile(
               title: const Text("M A P"),
-              leading: const Icon(Icons.settings),
+              leading: const Icon(Icons.map),
               onTap: (){
                 Navigator.pop(context);
 
-                Navigator.push(context, MaterialPageRoute(builder: (context) => const SettingsPage(),));
+                Navigator.push(context, MaterialPageRoute(builder: (context) =>  MyMapPage(),));
               },
             ),
           ),
