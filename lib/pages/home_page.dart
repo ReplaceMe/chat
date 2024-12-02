@@ -1,3 +1,4 @@
+import 'package:chat/components/my_bottombar.dart';
 import 'package:chat/components/my_drawer.dart';
 import 'package:chat/components/user_tile.dart';
 import 'package:chat/pages/chat_page.dart';
@@ -23,6 +24,7 @@ class HomePage extends StatelessWidget{
       ),
       //drawer: const MyDrawer(),
       body: _buildUserList(),
+      bottomNavigationBar: const MyBottomBar(),
     );
   }
 

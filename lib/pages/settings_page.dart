@@ -1,3 +1,4 @@
+import 'package:chat/components/my_bottombar.dart';
 import 'package:flutter/material.dart';
 //import 'package:yandex_maps_mapkit/mapkit.dart';
 //import 'package:yandex_maps_mapkit/yandex_map.dart';
@@ -12,6 +13,8 @@ class SettingsPage extends StatelessWidget{
       appBar: AppBar(
         title: Text("Settings"),
       ),
+
+      bottomNavigationBar: const MyBottomBar(),
     );
   }
 }

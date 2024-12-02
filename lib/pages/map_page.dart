@@ -1,11 +1,14 @@
-import 'package:chat/components/my_drawer.dart';
+import 'package:chat/components/my_bottombar.dart';
+//import 'package:chat/components/my_drawer.dart';
 import 'package:flutter/material.dart';
 import 'package:yandex_maps_mapkit/image.dart' as imgY;
+
+import 'package:flutter/src/painting/text_style.dart' as ts;
 
 import 'package:yandex_maps_mapkit/mapkit.dart';
 import 'package:yandex_maps_mapkit/yandex_map.dart';
 
-import 'package:yandex_maps_mapkit/mapkit_factory.dart';
+//import 'package:yandex_maps_mapkit/mapkit_factory.dart';
 
 class MyMapPage extends StatefulWidget {
   const MyMapPage({super.key});
@@ -59,18 +62,35 @@ class _MyMapPageState extends State<MyMapPage> {
     
     return (
       Scaffold(
-         appBar: AppBar(
-        title: const Text("К А Р Т А"),
-        backgroundColor: Colors.transparent,
-        foregroundColor: Colors.grey,
-        elevation: 0,
-      ),
+      //   appBar: AppBar(
+        
+      //   title: Center(
+          
+      //     child: Row(
+      //       mainAxisAlignment: MainAxisAlignment.center,
+      //       children: [
+      //         Text(
+      //         "ATHLETICA",
+      //         style: ts.TextStyle(
+      //           color: Colors.white,
+      //           fontSize: 48,
+      //           fontFamily: "AlfaSlabOne",
+      //         ),
+      //       ),
+      //       ],
+      //     ),
+      //   ),
+      //   backgroundColor: Color(0xFF333B6B),
+      //   foregroundColor: Colors.grey,
+      //   elevation: 0,
+      // ),
         body: YandexMap(
           onMapCreated: _maps,
           
 
           ),
-          drawer: const MyDrawer(),
+          //drawer: const MyDrawer(),
+          bottomNavigationBar: const MyBottomBar(),
       )
     );
   }
